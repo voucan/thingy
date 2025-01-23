@@ -4,7 +4,7 @@ const morgan = require('morgan');
 
 const app = express();
 const ORIGIN = 'https://voucan-us4.github.io';
-const CACHE_TTL = 86400 * 1000; // TTL in milliseconds
+const CACHE_TTL = 86400 * 1000;
 const cache = new Map();
 
 app.use(morgan('tiny'));
